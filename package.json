@@ -1,15 +1,16 @@
 {
-  "name": "Scrim-s05pbmm",
-  "description": "https://scrimba.com/the-ai-engineer-path-c02v/~02a/s0o2n4pi2d/head",
+  "name": "ai-agents",
+  "description": "Tool-calling agent that looks up your location and the weather there",
+  "type": "module",
   "scripts": {
     "start": "vite",
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "eval": "node --env-file=.env eval.js"
   },
   "dependencies": {
-    "openai": "4.12.1",
+    "openai": "4.104.0",
     "vite": "latest"
-  },
-  "devDependencies": {}
+  }
 }

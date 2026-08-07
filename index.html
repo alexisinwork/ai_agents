@@ -1,11 +1,45 @@
 <!doctype html>
-<html>
-    <head>
-        <title></title>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <h1>Hello world</h1>
-        <script type="module" src="index.js"></script>
-    </body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather agent</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Weather agent</h1>
+      <p class="hint">
+        Ask about your location or the weather there. Every tool call the model
+        makes is shown, so you can see what it looked up and what it didn't.
+      </p>
+
+      <form id="ask-form">
+        <label class="sr-only" for="query">Your question</label>
+        <input
+          id="query"
+          type="text"
+          value="What are some activity ideas I could do this afternoon, based on my location and the weather?"
+          autocomplete="off"
+        />
+        <button type="submit">Ask</button>
+      </form>
+
+      <fieldset id="implementation">
+        <legend>Loop</legend>
+        <label>
+          <input type="radio" name="impl" value="manual" checked />
+          Hand-rolled <code>agent.js</code>
+        </label>
+        <label>
+          <input type="radio" name="impl" value="runner" />
+          SDK <code>runTools</code>
+        </label>
+      </fieldset>
+
+      <ul id="output"></ul>
+    </main>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
