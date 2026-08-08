@@ -81,7 +81,9 @@ this as-is.
 
 ## Documentation
 
-Every project here carries a `THEORY.md` explaining the concepts it implements,
-cross-referenced with its siblings. When behaviour changes, update `THEORY.md`
-and the README in the same commit as the code. Both are written to be read --
-prose and tables, not bullet dumps.
+This is the one project in
+[ai_engineering](https://github.com/alexisinwork/ai_engineering) with **no**
+`THEORY.md` -- the README carries the concepts instead, including the table
+comparing the two loops. Adding one is outstanding work; until then, keep the
+README doing that job and update it in the same commit as the code. It is
+written to be read -- prose and tables, not bullet dumps.
